@@ -51,3 +51,9 @@ console.log(Object.values(obj)); //to know how many value are we define in obj
 console.log(Object.entries(obj)); //to know how many keys are we define in obj
 console.log(obj.hasOwnProperty("name"))//using this we check this property is exit in obj or not it gives boolean value
 console.log(obj3.greetings());
+// we can use ovject .freeze  for no one chnge in this object after it objject value never be changed ex
+obj.name="khushi";
+console.log(obj);
+// Object.freeze(obj);after these obj name not changed
+obj.name="Riya";
+console.log(obj)
