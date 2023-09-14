@@ -35,3 +35,17 @@ console.log(summ);
 // var is not  have block space propert
 // let and const are bolck space 
 
+// scope level function ex;
+print("RIYA");
+function print(username){
+    if(typeof username){
+        console.log(username);
+    }
+    function web(){
+        const website="youtube";
+        console.log(`username : ${username} websiteName: ${website}`);
+    }
+    // console.log(website);
+    web();
+}
+// print("riya");
