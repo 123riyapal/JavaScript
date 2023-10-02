@@ -28,12 +28,17 @@
     </ul>
     <script>
         //  document.getElementById("kingFisher").addEventListener("click",function(e){
-        //     console.log("it is a bird that found very rare");
+        // //     console.log("it is a bird that found very rare");
         //  });
         //  document.getElementById("images").addEventListener("click",function(e){
         //     console.log(` ${e.timeStamp.toFixed(2)} `);
         //  })
-        
+        document.querySelector('#images').addEventListener('click',function(e){
+            if(e.target.tagName ==='IMG'){
+            let c=e.target.parentNode ;
+            c.remove();
+        }
+        });
     </script>
     
 </body>
