@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Hello my name is Riya.</h1>
+    <button type="submit">Stop</button>
 </body>
+<script>
+    const change=function(){
+        document.querySelector('h1').innerHTML="Bye my name is Riya";
+
+    }
+   const changeMe= setTimeout(change, 2000);
+    document.querySelector("button").addEventListener('click',function(e){
+        clearTimeout(changeMe)
+    })
+</script>
 </html>
