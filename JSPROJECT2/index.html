@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>BMI (Body Mass Index) Calculator</h1>
+        <div class="calci">
+            <form action="#">
+                <div class="box">
+                    <label for="height">Height(cm)</label>
+                    <input type="text" name="height" id="height">
+                </div>
+                <div class="box">
+                    <label for="weight">Weight(Kg)</label>
+                    <input type="text" name="Weight" id="Weight">
+                </div>
+                <button type="submit" class="box">Calculate</button>
+            </form>
+        </div>
+        <div class="Bmi">
+            <h2>your BMI</h2>
+            <div class="result"></div>
+        </div>
+        <div class="index">
+            <div class="normal">18.25-25</div>
+            <div class="underweight"> &lt;18.25 </div>
+            <div class="obese">&gt; 30</div>
+            <div class="overweight">25-30</div>
+        </div>
+        <div class="indexline">
+            <div style=" background-color: green;">normal</div>
+            <div  style="background-color: orange;">underweight</div>
+            <div style="background-color: red;">obese</div>
+            <div style="background-color: orangered;">overweight</div>
+        </div>
+    </div>
+    <div class="img">
+        <img src="bmi.png" alt="" height="600px" >
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

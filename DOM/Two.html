@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-clr">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+</body>
+<script>
+// ***********************************************************************
+    // how to create new Element using dom
+ // **********************************************************************
+
+{
+const div=document.createElement('div');
+console.log(div);
+
+div.className="divElement"
+div.id="100";
+// div.innerText="Chai AUr Code";
+
+const node = document.createTextNode("This is new.");
+div.appendChild(node);
+document.body.append(node);
+
+
+
+
+
+
+
+
+}
+
+
+
+// **********************************************************************
+            // USES OF SOME PROPERTIES 
+// **********************************************************************
+
+
+// {    const val = document.querySelector(".parent");
+//      console.log(val);
+//      console.log(val.lastElementChild)
+//      console.log(val.firstElementChild)
+//      console.log(val);
+//      console.log(val.children);
+//      for(let i=0;i<val.children.length;i++){
+//          val.children[i].style.backgroundColor="purple";
+//      console.log(val.children[i].innerText);
+//      }
+//     const child = document.querySelector(".day");
+//     console.log(child)
+//     console.log(child.nextElementSibling)
+//     console.log(child.style.color = "yellow")
+//     console.log(val.childNodes);
+// }
+// **********************************************************************
+
+</script>
+
+</html>
