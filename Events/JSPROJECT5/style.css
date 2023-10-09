@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: slateblue;
+}
+.main{
+    padding-top: 20%;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-style:oblique;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+table{
+    box-shadow: 0px 0px 20px 10px white;
+}
+.color{
+    border: 2px solid black;
+}
+
+td,th{
+    padding: 6px;
+    border: 2px solid black;
+}

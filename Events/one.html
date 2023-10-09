@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Website</title>
+    <style>
+        body{
+            background-color: rgb(149, 39, 149);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        li{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul style="display: flex;" id ="images">
+        <li><img src="videos/auroralight.jpg" alt=""  height="100px" id="auroraLight ""></li>
+        <li><img src="videos/beach.jpg"       alt=""  height="90px"  id="Beach" ></li>
+        <li><img src="videos/kingfisher.jpg"  alt=""  height="90px"  id="kingFisher" ></li>
+        <li><img src="videos/purplefiedl.jpg" alt=""  height="90px"  id="PurpleField" ></li>
+        <li><img src="videos/purpleHills.jpg" alt=""  height="100px" id="PurpleHills" ></li>
+        <li><img src="videos/sky.jpg"         alt=""  height="100px" id="Sky""></li>
+        <li><img src="videos/sunset.jpg"      alt=""  height="90px"  id="Sunset" ></li>
+    </ul>
+    <script>
+        //  document.getElementById("kingFisher").addEventListener("click",function(e){
+        // //     console.log("it is a bird that found very rare");
+        //  });
+        //  document.getElementById("images").addEventListener("click",function(e){
+        //     console.log(` ${e.timeStamp.toFixed(2)} `);
+        //  })
+        document.querySelector('#images').addEventListener('click',function(e){
+            if(e.target.tagName ==='IMG'){
+            let c=e.target.parentNode ;
+            c.remove();
+        }
+        });
+    </script>
+    
+</body>
+</html>
